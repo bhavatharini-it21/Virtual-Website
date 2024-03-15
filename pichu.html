@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Times New Roman';
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="images/peru.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>MACHU PICCHU</h1>
+  <p><h5>Terraces:** Terracing is a prominent feature of Machu Picchu's architecture. The Incas carved agricultural terraces into the steep slopes of the mountain. These terraces served both practical and aesthetic purposes, providing flat surfaces for agriculture while creating a visually stunning landscape.*Dry Stone Construction:** The buildings at Machu Picchu were constructed using a technique known as "dry stone" construction. This method involves fitting stones together without the use of mortar. The precision with which the stones were cut and fitted is remarkable, and it allowed the structures to withstand earthquakes and other natural forces.
+    Temple of the Sun (Torreón):** This semi-circular structure is one of the most notable architectural features at Machu Picchu. It is believed to have been an astronomical observatory, and its curved walls and windows align with the movements of the sun during the solstices.Intihuatana Stone:** This carved stone, often referred to as the "hitching post of the sun," is an important religious and astronomical feature. It was used by the Incas for ritual purposes, and its angles align with various celestial events.Residential Buildings:** Machu Picchu contains numerous residential buildings, some of which were likely used for housing nobility and priests. These buildings feature trapezoidal doorways and windows, distinctive Inca architectural elements.
+    Temple of the Three Windows:** This structure, with its three large windows, is believed to have had ceremonial significance. It offers spectacular views of the surrounding landscape.Stone Quarry:** There is evidence of a nearby stone quarry where the Incas extracted the massive stones used in the construction of Machu Picchu. Some of these stones weigh many tons and were transported to the site with incredible precision.
+
+    <p><a href="https://www.tripadvisor.in/Attractions-g294318-Activities-c26-Machu_Picchu_Sacred_Valley_Cusco_Region.html">shop here</a></p> 
+  </h5></p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script> 
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
+>

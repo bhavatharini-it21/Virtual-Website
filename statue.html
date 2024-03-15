@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Times New Roman';
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="images/christ.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>THE CHRIST THE REDEEMER STATUE</h1>
+  <p><h5> Art Deco Style:** Christ the Redeemer is a representation of Jesus Christ and was constructed in the Art Deco architectural style, which was popular in the early 20th century. Art Deco is characterized by its geometric shapes, clean lines, and decorative motifs.Statue:** The main architectural feature of Christ the Redeemer is the massive statue of Jesus Christ. The statue stands 30 meters (98 feet) tall, including its pedestal, and has a wingspan of 28 meters (92 feet). It is made of reinforced concrete and covered with thousands of triangular soapstone tiles, which give it its distinctive appearance.Lightning Rod:** Christ the Redeemer serves as a lightning rod for the city, protecting the surrounding area from lightning strikes. The statue has been struck by lightning several times, causing damage that has been repaired over the years.
+    Christ the Redeemer is a testament to the skill and creativity of its designers and builders. It stands as a symbol of faith, hope, and the enduring connection between architecture and culture.
+    Restoration and Conservation:** Over the years, the statue has undergone several restoration and conservation efforts to maintain its structural integrity and appearance. These efforts have included cleaning, repairs to the soapstone tiles, and the reinforcement of the statue's internal structure.
+    <p><a href="https://www.tripadvisor.com/ShowUserReviews-g303506-d554128-r246334889-Corcovado_Christ_the_Redeemer-Rio_de_Janeiro_State_of_Rio_de_Janeiro.html">shop here</a></p> 
+</h5></p>
+
+<p><a href="https://kuula.co/post/5vMbC/collection/7JQsN">Virtual tour</a></p> 
+</h5></p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script> 
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
+>

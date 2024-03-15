@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Times New Roman';
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="images/chichen.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>CHICHEN ITZA</h1>
+  <p><h5>.Chichen Itza is an ancient Maya archaeological site located on the Yucatan Peninsula in MexicoEl Castillo (The Pyramid of Kukulcan):** El Castillo is one of the most iconic structures at Chichen Itza. It is a step pyramid dedicated to the feathered serpent god, Kukulcan. The pyramid has four sides, each with 91 steps, adding up to 364 steps. Including the top platform, this makes a total of 365 steps, representing the solar Temple of the Warriors:** This complex consists of a large stepped pyramid flanked by numerous columns and statues. The columns are carved in the shape of Toltec warriors. The temple served as a place for religious ceremonies and gatherings.
+    Chichen Itza boasts one of the largest and best-preserved ball courts in Mesoamerica. The court is surrounded by high walls with stone hoops. The game played here had great ritual significance, and it's believed that the winning team's captain may have been sacrificed.This temple is located adjacent to the Great Ballcourt and features numerous columns with intricate carvings. It is thought to have been a marketplace or an administrative centeThis area consists of numerous columns arranged in rows. It was likely a market or a gathering place. The columns are carved with various motifs and symbols.
+
+    <p><a href="https://www.tripadvisor.com/ShowUserReviews-g150808-d153407-r337312493-Chichen_Itza-Chichen_Itza_Yucatan_Peninsula.html">shop here</a></p> 
+  </h5></p>
+  <p><a href="https://kuula.co/post/5vDBs/collection/7JQ6q ">Virtual tour</a></p> 
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script> 
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
+>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Times New Roman';
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="images/china.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>THE GREAT WALL OF CHINA</h1>
+  <p><h5> Chichen Itza in Mexico’s Yucatan Peninsula, The Roman Colosseum in Rome, and Petra (Jordan).... Read more at: https://www.studyiq.com/articles/seven-wonders-of-the-world/
+    **Materials:** The materials used to build the Great Wall varied depending on the region and the era in which it was constructed. Common materials included earth, wood, stone, and bricks. In some sections, rammed earth was used to create a sturdy and durable wall.
+    **Height and Width:** The height and width of the wall varied throughout its construction. Typically, the wall's height ranged from 6 to 8 meters (20 to 26 feet), and its width was sufficient for several soldiers to walk abreast on top of it. Some sections featured higher walls and deeper trenches for added defense.
+    **Passes and Gates:** The Great Wall included numerous passes and gates, such as the Juyong Pass and the Shanhaiguan Pass, which served as key entry points and were often fortified with additional walls, gates, and defensive structures.
+    <p><a href="https://www.minube.net/place/great-wall-souvenir-shop--a65464">shop here</a></p>
+   <p><a href="https://kuula.co/post/n1/collection/7JQsN">VIRTUAL TOUR</a></p>
+  </h5></p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
+>

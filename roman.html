@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Times New Roman';
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="images/roman.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>THE ROMAN COLLOSSEUM</h1>
+  <p><h5>The Colosseum, also known as the Flavian Amphitheatre, is an ancient Roman amphitheater located in the center of Rome, Italy. It is one of the most iconic and well-preserved examples of ancient Roman architecture.Design and Layout:** The Colosseum is an elliptical amphitheater with a massive footprint. It measures approximately 189 meters (615 feet) in length, 156 meters (510 feet) in width, and originally stood around 48 meters (157 feet) in height. It could accommodate an estimated 50,000 to 80,000 spectators.Design and Layout:** The Colosseum is an elliptical amphitheater with a massive footprint. It measures approximately 189 meters (615 feet) in length, 156 meters (510 feet) in width, and originally stood around 48 meters (157 feet) in height. It could accommodate an estimated 50,000 to 80,000 spectators.Materials:** The Colosseum was primarily constructed using concrete and a variety of stones, including travertine, tuff, and brick. The outer façade was covered with white travertine limestone, which gave the amphitheater its distinctive appearance.Architectural Style:** The Colosseum is a prime example of Roman engineering and architectural innovation. It is characterized by its use of arches, vaults, and columns in a monumental scale. The structure is a testament to the Romans' mastery of concrete construction.
+    Arena:** The central arena, where the gladiatorial contests and other events took place, was made of wood and covered with sand. The arena could be flooded for naval reenactments and other water-based spectacles.
+    Use and Purpose:** The Colosseum was primarily used for gladiatorial contests, chariot races, animal hunts, and various public spectacles. It was a place of entertainment and served as a symbol of Roman power and engineering prowess.
+    <p><a href="https://www.tripadvisor.com/ShowUserReviews-g187791-d8476360-r581321711-Piazza_di_Spagna-Rome_Lazio.html">shop here</a></p> 
+
+  </h5></p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script> 
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
+>

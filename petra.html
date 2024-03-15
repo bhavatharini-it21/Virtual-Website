@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Times New Roman';
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="images/petra.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>PETRA,JORDAN</h1>
+  <p><h5> Rock-Cut Architecture:** Petra is renowned for its rock-cut architecture, where entire structures, including temples, tombs, and dwellings, were carved directly into the cliffs. The city's architecture makes use of the natural sandstone rock formations, creating a seamless blend with the surrounding landscape.*Siq:** The main entrance to Petra is through the Siq, a narrow, winding gorge that stretches for over a kilometer. The Siq is flanked by towering cliffs, and it served as a natural defense for the city.*Royal Tombs:** Petra is home to several large and elaborately carved royal tombs, including the Urn Tomb, the Silk Tomb, and the Palace Tomb. These tombs are characterized by their grand facades and intricate details.
+    Water Management:** Petra's ingenious water management system is an architectural marvel in itself. The Nabataeans developed an intricate system of dams, cisterns, and channels to collect and store water, allowing the city to thrive in a region with limited water sources.
+    Water Management:** Petra's ingenious water management system is an architectural marvel in itself. The Nabataeans developed an intricate system of dams, cisterns, and channels to collect and store water, allowing the city to thrive in a region with limited water sources.
+    <p><a href="https://www.tripadvisor.in/Attractions-g318895-Activities-c26-Petra_Wadi_Musa_Ma_an_Governorate.html">shop here</a></p> 
+</h5></p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script> 
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
+>

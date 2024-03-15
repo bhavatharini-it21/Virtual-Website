@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Pop-up Box</title>
+    <style>
+        /* Styles for the button */
+        .popup-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        /* Styles for the overlay */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        /* Styles for the pop-up box */
+        .popup-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            animation: pop-up 0.3s ease-in-out;
+        }
+
+        /* Animation for the pop-up box */
+        @keyframes pop-up {
+            from {
+                transform: scale(0.7);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Close button for the pop-up */
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button class="popup-button" onclick="togglePopup()">Show Pop-up</button>
+    
+    <div class="overlay" id="overlay">
+        <div class="popup-box">
+            <span class="close-button" onclick="togglePopup()">&#10006;</span>
+            <h2>Pop-up Content</h2>
+            <p>This is a simple animated pop-up box created using HTML and CSS.</p>
+        </div>
+    </div>
+
+    <script>
+        function togglePopup() {
+            const overlay = document.getElementById('overlay');
+            overlay.style.display = overlay.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
+
